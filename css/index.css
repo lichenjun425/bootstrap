@@ -1,0 +1,46 @@
+i {
+  font-style: normal;
+}
+header.top a.navbar-brand img {
+  height: 26px;
+}
+header.top .navbar-nav li {
+  border: 2px solid transparent;
+}
+header.top .navbar-default {
+  background-color: #293c55;
+}
+header.top .navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+header.top .navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+header.top .navbar-default li > a:hover {
+  color: #fff;
+}
+header.top .navbar-default li:active {
+  background-color: #213044;
+}
+header.top .navbar-default a {
+  color: #fff;
+}
+section.content #fp-nav ul li a span {
+  background: transparent !important;
+  border: 1px solid #337ab7;
+}
+.modal {
+  top: 100px;
+}
+.modal .form-horizontal .checkbox span.pull-right {
+  color: #4183C4;
+}
+.modal .model-top,
+.modal .modal-btm {
+  height: 100px;
+  border-left: 1px solid #cccccc;
+}
+.modal span.center {
+  margin-left: -10px;
+  margin-right: 20px;
+}

@@ -7,14 +7,125 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" href="./asset/bower_components/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./asset/bower_components/fullPage.js-master/jquery.fullPage.css">
 </head>
 <body>
-    <header></header>
-    <section></section>
-    <footer></footer>
+<header class="top">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt=""></a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">首页</a></li>
+                    <li>
+                        <a href="#">购买</a>
+                    </li>
+                    <li><a href="#">演示</a></li>
+                    <li><a href="#">帮助</a></li>
+                    <li><a href="#">开发文档</a></li>
+                    <li><a href="#">BSfiy</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-user"></i></a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<section class="content">
+
+    <div id="fp">
+        <div class="section">第一屏</div>
+        <div class="section">第二屏</div>
+        <div class="section">第三屏</div>
+        <div class="section">
+            <div class="slide">第四屏的第一屏</div>
+            <div class="slide">第四屏的第二屏</div>
+            <div class="slide">第四屏的第三屏</div>
+            <div class="slide">第四屏的第四屏</div>
+        </div>
+        <div class="section">第五屏</div>
+        <div class="section">第六屏</div>
+    </div>
+
+</section>
+<footer></footer>
+
+<!--登录模态框-->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">登录</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h5 class="text-center">使用验证码登录</h5>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3"
+                                           placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> 自动登录
+                                        </label>
+                                        <span class="pull-right">忘记密码了?</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-primary btn-group-lg">登录</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="model-top">
+                        </div>
+                       <span class="center">或</span> <button class="btn btn-success">一分钟注册</button>
+                        <div class="modal-btm">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
-<script src="./asset/bower_components/jquery/jquery.js"></script>
+<script src="./asset/bower_components/jquery/jquery.min.js"></script>
 <script src="./asset/bower_components/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="./asset/bower_components/fullPage.js-master/jquery.fullPage.js"></script>
 <script src="./js/index.js"></script>
 </html>

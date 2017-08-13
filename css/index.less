@@ -1,0 +1,76 @@
+@color: #293c55;
+i {
+  font-style: normal;
+}
+
+//头部开始
+
+header.top {
+
+  //logo
+  a.navbar-brand img {
+    height: 26px;
+
+  }
+
+  .navbar-nav li{
+    border: 2px solid transparent;
+  }
+
+
+  .navbar-default {
+    .navbar-toggle{
+      border-color: transparent;
+      .icon-bar{
+        background-color: #fff;
+      }
+    }
+    background-color: @color;
+    li > a:hover {
+      color: #fff;
+
+    }
+    li:active{
+      background-color: #213044;
+    }
+    a {
+      color: #fff;
+    }
+  }
+
+}
+
+//内容部分
+
+section.content{
+  #fp-nav ul li a.active span {
+
+  }
+  #fp-nav ul li a span {
+    background: transparent !important;
+    border: 1px solid #337ab7;
+  }
+}
+
+
+
+//模态框
+
+.modal{
+  top:100px;
+  .form-horizontal{
+    .checkbox{
+      span.pull-right{
+        color:#4183C4;
+      }
+    }
+  }
+  .model-top,.modal-btm{
+    height: 100px;
+    border-left: 1px solid #cccccc;
+  }
+  span.center{
+    margin-left: -10px;
+    margin-right: 20px;
+  }
+}
