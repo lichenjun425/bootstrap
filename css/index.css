@@ -1,6 +1,10 @@
 i {
   font-style: normal;
 }
+body {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
 header.top a.navbar-brand img {
   height: 26px;
 }
@@ -16,18 +20,57 @@ header.top .navbar-default .navbar-toggle {
 header.top .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff;
 }
+header.top .navbar-default li {
+  cursor: pointer;
+}
 header.top .navbar-default li > a:hover {
   color: #fff;
 }
-header.top .navbar-default li:active {
-  background-color: #213044;
-}
-header.top .navbar-default a {
+header.top .navbar-default li > a:active {
   color: #fff;
+}
+header.top .navbar-default li > a:visited {
+  color: #fff;
+}
+header.top .navbar-default li > a {
+  color: #fff;
+}
+#fp div.section {
+  height: 588px !important;
 }
 section.content #fp-nav ul li a span {
   background: transparent !important;
   border: 1px solid #337ab7;
+}
+.one {
+  background: url("../images/1.jpg") no-repeat;
+}
+.one .left li,
+.one .left h2 {
+  color: #ffffff;
+}
+.one .right img {
+  max-width: 100%;
+}
+.two h2,
+.two p {
+  text-align: center;
+  color: #707d8d;
+}
+.two ul > li {
+  float: left;
+  width: 20%;
+}
+.three h2,
+.three p {
+  text-align: center;
+  color: #707d8d;
+}
+.three img {
+  max-width: 100%;
+}
+.three p {
+  text-align: center;
 }
 .modal {
   top: 100px;
@@ -43,4 +86,12 @@ section.content #fp-nav ul li a span {
 .modal span.center {
   margin-left: -10px;
   margin-right: 20px;
+}
+footer div {
+  height: 54px;
+  background-color: #293c55;
+}
+footer div p {
+  line-height: 54px;
+  color: #ffffff;
 }

@@ -4,7 +4,7 @@ $('ul.navbar-right').on("click","li",function () {
     $('li').each(function (e,i) {
          i.style.backgroundColor="";
          i.style.borderBottom='';
-         i.style.color='#fff';
+         // i.style.color='#fff';
     });
     $(this).css({
         "background":"#213044",
@@ -15,6 +15,13 @@ $('ul.navbar-right').on("click","li",function () {
 //全屏插件
 $(function(){
     $('#fp').fullpage({
-        navigation:true
+        navigation:true,
+        verticalCentered:true
     });
+});
+
+//轮播插件
+
+$('.carousel').carousel({
+    interval: 3000
 });

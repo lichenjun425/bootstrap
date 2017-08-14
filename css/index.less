@@ -2,6 +2,10 @@
 i {
   font-style: normal;
 }
+body{
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
 
 //头部开始
 
@@ -13,27 +17,35 @@ header.top {
 
   }
 
-  .navbar-nav li{
+  .navbar-nav li {
     border: 2px solid transparent;
   }
 
-
   .navbar-default {
-    .navbar-toggle{
+    .navbar-toggle {
       border-color: transparent;
-      .icon-bar{
+      .icon-bar {
         background-color: #fff;
       }
     }
     background-color: @color;
+
+    li {
+      cursor: pointer;
+    }
+
     li > a:hover {
       color: #fff;
 
     }
-    li:active{
-      background-color: #213044;
+    li > a:active {
+      color: #fff;
     }
-    a {
+    li > a:visited {
+      color: #fff;
+    }
+
+    li > a {
       color: #fff;
     }
   }
@@ -42,7 +54,11 @@ header.top {
 
 //内容部分
 
-section.content{
+#fp div.section {
+  height: 588px !important;
+}
+
+section.content {
   #fp-nav ul li a.active span {
 
   }
@@ -52,25 +68,83 @@ section.content{
   }
 }
 
+//第一屏内容
+.one {
+  background: url("../images/1.jpg") no-repeat;
+  .left {
+    li, h2 {
+      color: #ffffff;
+    }
+  }
 
+  .right {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+//第二屏内容
+
+.two {
+  h2, p {
+    text-align: center;
+    color: #707d8d;
+  }
+  ul > li {
+    float: left;
+    width: 20%;
+  }
+
+}
+
+//第三屏内容
+
+.three {
+  h2, p {
+    text-align: center;
+    color: #707d8d;
+  }
+
+  img {
+    max-width: 100%;
+
+  }
+  p {
+    text-align: center;
+  }
+}
 
 //模态框
 
-.modal{
-  top:100px;
-  .form-horizontal{
-    .checkbox{
-      span.pull-right{
-        color:#4183C4;
+.modal {
+  top: 100px;
+  .form-horizontal {
+    .checkbox {
+      span.pull-right {
+        color: #4183C4;
       }
     }
   }
-  .model-top,.modal-btm{
+  .model-top, .modal-btm {
     height: 100px;
     border-left: 1px solid #cccccc;
   }
-  span.center{
+  span.center {
     margin-left: -10px;
     margin-right: 20px;
   }
+}
+
+//底部
+footer {
+  div{
+    height: 54px;
+    background-color: @color;
+    p {
+      line-height: 54px;
+      color: #ffffff;
+    }
+  }
+
 }
