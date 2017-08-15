@@ -48,18 +48,37 @@ section.content #fp-nav ul li a span {
 .one .left li,
 .one .left h2 {
   color: #ffffff;
+  margin-bottom: 10px;
+}
+.one .left button {
+  margin-right: 10px;
+}
+.one .right {
+  width: 380px;
+  height: 320px;
+  margin-right: -420px;
+  background: url("../images/imac.svg") no-repeat center center;
+  padding-top: 21px;
 }
 .one .right img {
-  max-width: 100%;
+  width: 344px;
 }
 .two h2,
 .two p {
   text-align: center;
   color: #707d8d;
 }
+.two h2 {
+  transition: transform 1s;
+}
 .two ul > li {
   float: left;
   width: 20%;
+  padding: 14px;
+}
+.two ul > li img {
+  max-width: 130px;
+  text-align: center;
 }
 .three h2,
 .three p {
@@ -67,7 +86,9 @@ section.content #fp-nav ul li a span {
   color: #707d8d;
 }
 .three img {
-  max-width: 100%;
+  width: 40%;
+  height: 40%;
+  margin: 20% auto 15%;
 }
 .three p {
   text-align: center;

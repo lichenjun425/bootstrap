@@ -54,6 +54,7 @@ header.top {
 
 //内容部分
 
+
 #fp div.section {
   height: 588px !important;
 }
@@ -74,12 +75,24 @@ section.content {
   .left {
     li, h2 {
       color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    button{
+      margin-right: 10px;
     }
   }
 
+
   .right {
+    width: 380px;
+    height: 320px;
+    margin-right: -420px;
+    background: url("../images/imac.svg") no-repeat center center;
+    padding-top: 21px;
     img {
-      max-width: 100%;
+      //max-width: 100%;
+      width: 344px;
     }
   }
 }
@@ -91,9 +104,18 @@ section.content {
     text-align: center;
     color: #707d8d;
   }
+h2{
+  transition: transform 1s;
+}
+
   ul > li {
     float: left;
     width: 20%;
+    padding: 14px;
+    img {
+      max-width: 130px;
+      text-align: center;
+    }
   }
 
 }
@@ -107,7 +129,9 @@ section.content {
   }
 
   img {
-    max-width: 100%;
+    width: 40%;
+    height: 40%;
+    margin: 20% auto 15%;
 
   }
   p {
